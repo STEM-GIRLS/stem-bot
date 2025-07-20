@@ -7,7 +7,7 @@ bot = commands.Bot("/", intents=intents)
 
 @bot.event
 async def on_ready():
-    print("Bot ligado")
+    print("Bot Sincronizado!")
 
 #mensagem de boas-vindas
 @bot.event
@@ -15,7 +15,7 @@ async def on_member_join(member):
     channel_id = 1390807035636875427
     channel = bot.get_channel(channel_id)
     if channel:
-        await channel.send(f"Bem-vindo, {member.mention}! 🌷")
+        await channel.send(f"Bem-vinda, {member.mention}! 🌷")
 
 #mensagem de saída
 @bot.event
